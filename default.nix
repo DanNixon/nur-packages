@@ -14,6 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
+  aprsgateway = pkgs.callPackage ./pkgs/aprsgateway { };
   dmrgateway = pkgs.callPackage ./pkgs/dmrgateway { };
   mmdvmhost = pkgs.callPackage ./pkgs/mmdvmhost { };
 }
